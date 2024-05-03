@@ -54,7 +54,7 @@ function Signup() {
       <div className="position-relative">
         <div
           className="position-absolute text-center top-50 start-50 translate-middle border border-info p-2 "
-          style={{ width: "150px", zIndex: 1, backgroundColor:"#02edda",borderRadius:"2px" }}
+          style={{ width: "150px", zIndex: 1, backgroundColor:"#02edda",borderRadius:"2px" ,color:"#454545"}}
         >
           SIGN UP
         </div>
@@ -78,7 +78,7 @@ function Signup() {
         </div>
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="formName">
-              <Form.Label>Name</Form.Label>
+              <Form.Label style={{color:"#00CCCC"}}>Name</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Name"
@@ -89,7 +89,7 @@ function Signup() {
             </Form.Group>
 
             <Form.Group className="mb-2" controlId="formDOB">
-              <Form.Label>Date of Birth</Form.Label>
+              <Form.Label style={{color:"#00CCCC"}}>Date of Birth</Form.Label>
               <Form.Control
                 type="date"
                 placeholder="Date of Birth"
@@ -100,7 +100,7 @@ function Signup() {
             </Form.Group>
 
             <Form.Group className="mb-2" controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
+              <Form.Label style={{color:"#00CCCC"}}>Email address</Form.Label>
               <Form.Control
                 type="email"
                 placeholder="Enter email"
@@ -111,7 +111,7 @@ function Signup() {
             </Form.Group>
 
             <Form.Group className="mb-2" controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
+              <Form.Label style={{color:"#00CCCC"}}>Password</Form.Label>
               <Form.Control
                 type="password"
                 placeholder="Password"
@@ -122,15 +122,16 @@ function Signup() {
             </Form.Group>
 
             <Form.Group className="mb-2" controlId="formBasicCheckbox">
-              <Form.Check type="checkbox" label="Remember me" />
+              <Form.Check type="checkbox" label="Remember me" style={{color:"#00CCCC"}}/>
             </Form.Group>
 
-            <Button variant="primary w-100" type="submit" style={{backgroundColor:"#02edda"}}>
+            <Button variant="primary w-100" type="submit" style={{backgroundColor:"#02edda", color:"#454545"}}>
               Signup
             </Button>
           </Form>
           <p className="mt-3 text-center">
-            <span className="align-middle">
+            <span className="align-middle" style={{color:"#00CCCC"}}>
+              
             Already have an account? <Link to="/login">Login</Link>
             </span>
           </p>
