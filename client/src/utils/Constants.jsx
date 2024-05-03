@@ -1,4 +1,4 @@
 
 module.exports = Object.freeze({
-    url : "https://react-node-server.onrender.com", 
+    url : "https://quantum-it.onrender.com", 
 });
